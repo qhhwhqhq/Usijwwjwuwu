@@ -200,7 +200,7 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
-    if ispay2[0] == "yes":
+    if ispay2[0] == "no":
         isclaim.clear()
         isclaim.append("on")
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 2)
@@ -221,7 +221,7 @@ async def _(event):
             else:
                 pass
         for i in range(int(msg[0])):
-            if ispay2[0] == 'no':
+            if ispay2[0] == 'yes':
                 break
             username = ""
 
