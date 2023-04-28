@@ -200,7 +200,7 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
-    if ispay2[0] == "no":
+    if ispay2[0] == "yes":
         isclaim.clear()
         isclaim.append("on")
         msg = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 2)
@@ -242,7 +242,7 @@ async def _(event):
 - By ↣ @X_K_5
 ┗━━━━━┛
 ┏━━━━━┓
-↣ (@h_3_j)
+↣ (@{username}) 
 ┗━━━━━┛
 ┏━━━━━┓
 - By ↣ @is_TNT
@@ -309,7 +309,7 @@ async def _(event):
 - By ↣ @X_K_5
 ┗━━━━━┛
 ┏━━━━━┓
-↣ (@h_3_j)
+↣ (@{username}) 
 ┗━━━━━┛
 ┏━━━━━┓
 - By ↣ @is_TNT
@@ -351,7 +351,7 @@ async def _(event):
 - By ↣ @X_K_5
 ┗━━━━━┛
 ┏━━━━━┓
-↣ (@h_3_j)
+↣ (@{username}) 
 ┗━━━━━┛
 ┏━━━━━┓
 - By ↣ @is_TNT
